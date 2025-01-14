@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            /*display:grid -ata daia na daia aki ar jono akta template dita hba*/
+            display:flex;
+           /* grid-template-columns: 200px 200px 200px 200px;
+           
+           grid-template-columns:repeat(2,200px) 200px 150px;
+           grid-template-columns:100px 200px 400px 200px 200px;
+           
+           grid-template-columns:repeat(3,1fr) 2fr;
+           
+
+           grid-template-columns:200px 200px 200px;
+           justify-content:end;
+           justify-content:space-around;
+           */
+           grid-template-columns:200px 200px auto;
+           justify-content:center;
+        }
+        .item{
+            border:1px solid aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Grid Layout: 2D layout</h2>
+
+    <div class="container">
+        <!--.item{item - $}*20-->  
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+
+
+
+
+    </div>
+</body>
+</html>
